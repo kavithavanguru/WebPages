@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Mobile Online Shopping</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 		<!--<link rel="stylesheet" href="http://demos.jquerymobile.com/1.2.0/css/themes/default/jquery.mobile-1.2.0.css">
+ 		<link rel="stylesheet" href=http://demos.jquerymobile.com/1.2.0/docs/_assets/css/jqm-docs.css>-->
+ 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/MyStyles.css" />
+		<!--  <script src="js/ProductLine.Provider.js" type="text/javascript"></script>
+		<script src="js/ProductLine.UserContext.js" type="text/javascript"></script>
+		<script src="js/ProductLine.ShoppingCart.js" type="text/javascript"></script>-->
+           </head><body>
+	<!-- Start of first page: #one -->
+	<div data-role="page" id="personalInfo"><!-- dialog-->
+
+				<div data-role="header" data-theme="b">
+					<h1>Personal Info</h1>
+				</div><!-- /header -->
+
+				<div data-role="content" data-theme="e">
+					<div data-role="fieldcontain">
+						 <label for="FirstName"><strong>First Name</strong></label>
+			        	  <input type="text" name="FirstName" id= "FirstName" value=""  />
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="LastName"><strong>Last Name</strong></label>
+			        	  <input type="text" name="LastName" id= "LastName" value=""  />
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="Email"><strong>Email</strong></label>
+			        	 <input type="text" name="Email" id= "Email" value=""  />
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="Phone"><strong>Cell Phone</strong></label>
+			        	  <input type="text" name="Phone" id= "Phone" value=""  />
+			        </div>
+			        
+			         <div data-role="fieldcontain">
+					 <fieldset data-role="controlgroup">
+							<legend><strong>Preferred Method of Contact: </strong>(Check all that apply)</legend>
+							<input type="checkbox" name="PreferredContactMode" id="checkbox-1a" class="custom" />
+							<label for="checkbox-1a">Email</label>
+		
+							<input type="checkbox" name="PreferredContactMode" id="checkbox-2a" class="custom" />
+							<label for="checkbox-2a">Text</label>
+							
+							<input type="checkbox" name="PreferredContactMode" id="checkbox-3a" class="custom" />
+							<label for="checkbox-3a">Phone Call</label>
+
+			   		 </fieldset>
+			        </div>
+					<a href="#GraduationInfo" data-role="button" data-theme="b"  data-transition="slide">Next</a>   
+				</div>
+	</div>
+	<div data-role="page" id=GraduationInfo><!-- dialog-->
+
+				<div data-role="header" data-theme="b">
+		    		<h1>Graduation Info</h1>
+		 		</div><!-- /header -->
+		 		<div data-role="content" data-theme="e">
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend><strong>Year </strong></legend>
+							<select name="Year" id="select-choice-year">
+							<option>Year</option>
+							<option value="Dec2014">Dec 2014</option>
+							<option value="May2015">May 2015</option>
+							<option value="Dec2015">Dec 2015</option>
+							<option value="May2016">May 2015</option>
+							</select>
+						</fieldset>
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="ChoralTeacher"><strong>Choral Teacher</strong></label>
+			        	 <input type="text" name="ChoralTeacher" id= "ChoralTeacher" value=""  />
+			        </div>
+			       <a href="#MajorInfo" data-role="button" data-theme="b"  data-transition="slide">Next</a>   
+			        </div>  
+	</div>	
+	<div data-role="page" id=MajorInfo><!-- dialog-->
+
+				<div data-role="header" data-theme="b">
+		    		<h1>Major Info</h1>
+		 		</div><!-- /header -->
+		 		<div data-role="content" data-theme="e">
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend><strong>Voice Part </strong></legend>						
+							<select name="Voice" id="select-choice-year">
+							<option>Select</option>
+							<option value="Soprano">Soprano</option>
+							<option value="Alto">Alto</option>
+							<option value="Tenor">Tenor</option>
+							<option value="Bass">Bass</option>
+							</select>
+						</fieldset>
+			        </div>
+			         <div data-role="fieldcontain">
+						 <label for="Instruments"><strong>Instruments I play</strong></label>
+			        	 <input type="text" name="Instruments" id= "Instruments" value=""  />
+			        </div>
+			        
+			        <div data-role="fieldcontain">
+					 <fieldset data-role="controlgroup">
+							<legend>Intended Major: (Click all that apply)</legend>
+							<input type="checkbox" name="major" id="checkbox-1a" class="custom" />
+							<label for="checkbox-1a">Music Education</label>
+		
+							<input type="checkbox" name="major" id="checkbox-2a" class="custom" />
+							<label for="checkbox-2a">Music Business</label>
+							
+							<input type="checkbox" name="major" id="checkbox-3a" class="custom" />
+							<label for="checkbox-3a">Music Therapy</label>
+		
+							<input type="checkbox" name="major" id="checkbox-4a" class="custom" />
+							<label for="checkbox-4a">Performance</label>
+							
+							<input type="checkbox" name="major" id="checkbox-4a" class="custom" />
+							<label for="checkbox-4a">I will not be a music major, but I want to sing in choirs</label>
+							
+							<input type="checkbox" name="major" id="checkbox-4a" class="custom" />
+							<label for="checkbox-4a">Unsure</label>
+			   		 </fieldset>
+			        </div>
+			       <a href="#AddressInfo" data-role="button" data-theme="b"  data-transition="slide">Next</a> 
+			        </div>  
+	</div>
+	<div data-role="page" id=AddressInfo><!-- dialog-->
+
+				<div data-role="header" data-theme="b">
+		    		<h1>Address Info</h1>
+		 		</div><!-- /header -->
+		 		<div data-role="content" data-theme="e">
+					<div data-role="fieldcontain">
+						 <label for="Address"><strong>Address</strong></label>
+			        	  <input type="text" name="Address" id= "Address" value=""  />
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="City"><strong>City</strong></label>
+			        	  <input type="text" name="City" id= "City" value=""  />
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="State"><strong>State</strong></label>
+			        	  <input type="text" name="State" id= "State" value=""  />
+			        </div>
+			        <div data-role="fieldcontain">
+						 <label for="Zip"><strong>Zip</strong></label>
+			        	  <input type="text" name="Zip" id= "Zip" value=""  />
+			        </div>
+			         <a href="#AddressInfo" data-role="button" data-theme="b"  data-transition="slide">Submit</a>  
+			        </div>  
+	</div>		
+	<div data-role="page" id=AddressInfo><!-- dialog-->
+
+				<div data-role="header" data-theme="b">
+		    		<h1>Address Info</h1>
+		 		</div><!-- /header -->
+		 		<div data-role="content" data-theme="e">
+				<div data-role="fieldcontain">
+					<label for="CardType">Thank you for your interest in the Western Illinois Choirs. We are excited about the opportunity to talk to you about joining us on our campus. Continue to stay up to date with our choirs by following us on social media.</label>
+				</div>
+				</div>
+	</div>	
+		
+	 <script type="text/javascript">
+         
+         	  var ApplicantObj = {
+         				ApplicantId:0,
+         				LastName: "Vanguru",
+         				FirstName:"Kavitha" ,
+         				ChoralTeacher:"Jeff Brown",
+         				Address:"310 Sherman Hall",
+         				City:"Macomb",
+         				State:"IL",
+         				Zip:"61455",
+         				Phone: "309-566-9563",
+         				Email:"kr-vanguru@wiu.edu",
+         				Instruments:"Piano"
+         		};
+         	 
+         	
+		</script>
+	</body>
+</html>
